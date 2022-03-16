@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Admin panel') }}</title>
+    <title></title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -21,7 +21,7 @@
 </head>
 <body class="bg-home">
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm nv-rounded">
+        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm nav-rounded">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     <img src="../img/logo.png" class="logo">
@@ -75,9 +75,9 @@
             </div>
         </nav>
 
-        <main class="py-4">
+        <div class="py-4">
             @yield('content')
-        </main>
+        </div>
     </div>
 </body>
 </html>
